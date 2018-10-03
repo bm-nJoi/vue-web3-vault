@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/casino-component.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">components</a> casino-component.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/18</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div class="casino container"&gt;
+    &lt;h1&gt;Welcome to the Casino&lt;/h1&gt;
+    &lt;h4&gt;Please pick a number between 1 and 10&lt;/h4&gt;
+    Amount to bet: &lt;input v-model="amount" placeholder="0 Ether"&gt;
+    &lt;ul&gt;
+      &lt;li v-on:click="clickNumber"&gt;1&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;2&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;3&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;4&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;5&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;6&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;7&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;8&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;9&lt;/li&gt;
+      &lt;li v-on:click="clickNumber"&gt;10&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;img v-if="pending" id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif"&gt;
+    &lt;div class="event" v-if="winEvent"&gt;
+      &lt;p v-if="winEvent._status" id="has-won"&gt;&lt;i aria-hidden="true" class="fa fa-check"&gt;&lt;/i&gt; Congragulations, you have won {{winEvent._amount}} wei&lt;/p&gt;
+      &lt;p v-else id="has-lost"&gt;&lt;i aria-hidden="true" class="fa fa-times"&gt;&lt;/i&gt; Sorry you lost, try again.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+export default {
+  name: 'casino',
+<span class="fstat-no" title="function not covered" >  data () {</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      amount: null,
+      pending: false,
+      winEvent: null
+    }
+  },
+  methods: {
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    clickNumber (event) {</span></span>
+<span class="cstat-no" title="statement not covered" >      console.log('BETTING ON NUMBER, AMOUNT', event.target.innerHTML, this.amount)</span>
+<span class="cstat-no" title="statement not covered" >      this.winEvent = null</span>
+<span class="cstat-no" title="statement not covered" >      this.pending = true</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      this.$store.state.contractInstance().bet(event.target.innerHTML, {</span></span>
+        gas: 300000,
+        value: this.$store.state.web3.web3Instance().toWei(this.amount, 'ether'),
+        from: this.$store.state.web3.coinbase
+      }, (err, result) =&gt; {
+<span class="cstat-no" title="statement not covered" >        if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          console.log(err)</span>
+<span class="cstat-no" title="statement not covered" >          this.pending = false</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          let Won = this.$store.state.contractInstance().Won()</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          Won.watch((err, result) =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (err) {</span>
+<span class="cstat-no" title="statement not covered" >              console.log('could not get event Won()')</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >              this.winEvent = result.args</span>
+<span class="cstat-no" title="statement not covered" >              this.winEvent._amount = parseInt(result.args._amount, 10)</span>
+<span class="cstat-no" title="statement not covered" >              this.pending = false</span>
+            }
+          })
+        }
+      })
+    }
+  },
+<span class="fstat-no" title="function not covered" >  mounted () {</span>
+<span class="cstat-no" title="statement not covered" >    console.log('dispatching getContractInstance')</span>
+<span class="cstat-no" title="statement not covered" >    this.$store.dispatch('getContractInstance')</span>
+  }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+.casino {
+     margin-top: 50px;
+     text-align:center;
+}
+#loader {
+  width:150px;
+}
+ul {
+    margin: 25px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap:25px;
+    grid-row-gap:25px;
+}
+li{
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:#fff;
+    border: -2px solid #bf0d9b;
+    color: #bf0d9b;
+    box-shadow:3px 5px #bf0d9b;
+}
+li:hover{
+    background-color:#bf0d9b;
+    color:white;
+    box-shadow:0px 0px #bf0d9b;
+}
+li:active{
+    opacity: 0.7;
+}
+*{
+   color: #444444;
+}
+#has-won {
+  color: green;
+}
+#has-lost {
+  color:red;
+}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Oct 03 2018 11:27:50 GMT-0400 (Eastern Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
